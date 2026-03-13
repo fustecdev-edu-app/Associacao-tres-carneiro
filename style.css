@@ -1,0 +1,266 @@
+/* Estilo geral da página */
+body{
+font-family: Arial, sans-serif;
+/* Define a fonte usada no site */
+
+margin:0;
+/* Remove a margem padrão do navegador */
+
+background:#f4f4f4;
+/* Cor de fundo da página (cinza claro) */
+
+text-align:center;
+/* Centraliza o texto da página */
+}
+
+
+/* Cabeçalho do site */
+header{
+background: yellow;
+/* Cor verde do fundo do cabeçalho */
+
+color:rgb(241, 10, 10);
+/* Cor do texto dentro do cabeçalho */
+
+padding:20px;
+/* Espaçamento interno do cabeçalho */
+padding:30px 20px;
+/* espaço interno maior para ficar mais bonito */
+
+text-align:center;
+/* centraliza todo o conteúdo */
+}
+
+
+/* Menu de navegação */
+nav{
+background:#36e682;
+/* cor do menu */
+border-bottom:3px solid #2e8b57;
+/* linha a baixo*/
+
+padding:10px;
+/* espaço interno */
+
+position:sticky;
+/* faz o menu "grudar" no topo */
+
+top:0;
+/* define que ele fica no topo da tela */
+
+z-index:1000;
+/* garante que o menu fique acima dos outros elementos */
+}
+
+
+/* Links do menu */
+nav a{
+color:rgb(12, 12, 12);
+/* Cor do texto dos links */
+
+text-decoration:none;
+/* Remove o sublinhado dos links */
+
+margin:0 15px;
+/* Espaço entre os links do menu */
+
+font-weight:bold;
+/* Deixa o texto em negrito */
+}
+
+
+/* Efeito quando o mouse passa no menu */
+nav a:hover{
+text-decoration:underline;
+/* Adiciona sublinhado ao passar o mouse */
+}
+
+
+/* Área principal de conteúdo */
+section{
+background:white;
+/* Fundo branco para destacar o conteúdo */
+
+margin:30px auto;
+/* Espaço externo em cima e embaixo */
+
+padding:20px;
+/* Espaçamento interno */
+
+width:80%;
+/* Largura da seção */
+
+border-radius:8px;
+/* Cantos arredondados */
+
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+/* Sombra leve para dar efeito de cartão */
+}
+
+
+/* Rodapé do site */
+footer{
+background:#333;
+/* Fundo escuro do rodapé */
+
+color:white;
+/* Cor do texto do rodapé */
+
+padding:15px;
+/* Espaçamento interno */
+
+margin-top:40px;
+/* Espaço entre o conteúdo e o rodapé */
+}
+/* Estilo da logo da associação */
+header img{
+display:block;
+/* faz a imagem ocupar linha própria */
+
+margin:0 auto 10px auto;
+/* centraliza a logo e adiciona espaço abaixo */
+
+max-width:180px;
+/* limita o tamanho da logo */
+}
+/* Título principal do site */
+header h1{
+margin:10px 0;
+/* espaço acima e abaixo do título */
+
+font-size:28px;
+/* tamanho da fonte */
+}
+/* Frase de apresentação da associação */
+header p{
+font-size:16px;
+/* tamanho da frase */
+
+opacity:0.9;
+/* deixa o texto um pouco mais suave */
+}
+/* ===== RESPONSIVIDADE PARA CELULAR ===== */
+/* ===== GALERIA DE FOTOS ===== */
+
+.galeria{
+display:flex;
+/* coloca as imagens lado a lado */
+
+justify-content:center;
+/* centraliza as imagens */
+
+gap:15px;
+/* espaço entre as imagens */
+
+flex-wrap:wrap;
+/* permite quebrar linha em telas menores */
+}
+
+.galeria img{
+width:250px;
+/* largura das fotos */
+
+border-radius:8px;
+/* cantos arredondados */
+
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+/* sombra nas imagens */
+}
+
+
+@media (max-width:768px){
+
+/* Ajusta o tamanho do título */
+header h1{
+font-size:22px;
+}
+
+/* Ajusta o menu para celular */
+nav a{
+display:block;
+/* cada link ocupa uma linha */
+
+margin:10px 0;
+/* espaço entre os links */
+}
+
+/* Ajusta a área de conteúdo */
+section{
+width:95%;
+/* ocupa quase toda a largura da tela */
+
+margin:20px auto;
+}
+
+}
+
+/* ===== AGENDA DE EVENTOS ===== */
+
+.agenda{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+.agenda th{
+background:#2e8b57;
+color:white;
+padding:10px;
+}
+
+.agenda td{
+padding:10px;
+border:1px solid #ddd;
+}
+
+.agenda tr:nth-child(even){
+background:#f2f2f2;
+}
+
+/* ===== BOTÃO WHATSAPP ===== */
+
+.whatsapp{
+position:fixed;
+/* fixa o botão na tela */
+
+bottom:20px;
+/* distância do fundo da tela */
+
+right:20px;
+/* distância da direita */
+
+background:#25d366;
+/* cor oficial do WhatsApp */
+
+color:white;
+/* cor do texto */
+
+padding:15px 20px;
+/* tamanho do botão */
+
+border-radius:50px;
+/* deixa o botão arredondado */
+
+text-decoration:none;
+/* remove sublinhado */
+
+font-weight:bold;
+
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+/* sombra */
+}
+
+/* efeito ao passar o mouse */
+.whatsapp:hover{
+background:#1ebe5d;
+}
+
+/* ===== MAPA DA ASSOCIAÇÃO ===== */
+
+iframe{
+border-radius:8px;
+/* deixa os cantos arredondados */
+
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+/* adiciona sombra */
+}
