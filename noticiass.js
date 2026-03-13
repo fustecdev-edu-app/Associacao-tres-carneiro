@@ -1,5 +1,5 @@
 // importa conexão com o banco Firestore
-import { db } from "banco.js";
+import { db } from "./banco.js";
 
 
 // importa funções necessárias do Firestore
@@ -67,3 +67,4 @@ async function listarNoticias(){
 }
 
 listarNoticias()
+
