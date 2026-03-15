@@ -1,3 +1,5 @@
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 document.onkeydown = function(e) {
   // Bloqueia F12
   if (e.keyCode == 123) {
